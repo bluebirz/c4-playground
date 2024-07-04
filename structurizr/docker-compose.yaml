@@ -1,0 +1,11 @@
+version: "3"
+services:
+  c4:
+    container_name: structurizr1
+    image: structurizr/lite
+    stdin_open: true
+    tty: true
+    ports:
+      - 8080:8080
+    volumes:
+      - ./data:/usr/local/structurizr
