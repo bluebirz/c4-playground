@@ -1,2 +1,3 @@
 structurizr/data/.structurizr/
-structurizr/data/workspace.json
+structurizr/data/
+!structurizr/data/*.dsl

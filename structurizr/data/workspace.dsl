@@ -6,7 +6,7 @@ workspace {
         softwareSystem = softwareSystem "Software System" {
             webapp = container "Web Application" {
                 user -> this "Uses"
-                this -> user2 "Not use"
+                user2 -> this "Not use"
             }
             container "Database" {
                 webapp -> this "Reads from and writes to"
