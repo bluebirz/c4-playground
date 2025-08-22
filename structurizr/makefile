@@ -1,5 +1,5 @@
 start:
-	docker-compose up -d -f ./docker-compose-local.yaml
+	docker-compose -f ./docker-compose-local.yaml up -d 
 	open http://localhost:8080
 
 stop:
@@ -9,4 +9,4 @@ clear:
 	docker-compose down --volumes --rmi all
 
 build:
-	docker-compose build -f ./docker-compose-builder.yaml --build c4
+	docker-compose -f ./docker-compose-builder.yaml build --build c4
