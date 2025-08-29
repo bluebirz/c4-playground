@@ -1,10 +1,16 @@
 services:
   c4:
-    container_name: structurizr1
-    image: structurizr/lite
+    container_name: strz
+    image: structurizr/onpremises
     stdin_open: true
     tty: true
     ports:
       - 8080:8080
+    volumes:
+      - ./data:/usr/local/structurizr
+
+  cli:
+    image: structurizr/cli
+    container_name: cli
     volumes:
       - ./data:/usr/local/structurizr

@@ -1,10 +1,10 @@
 services:
   c4:
-    container_name: structurizr1
+    container_name: strz
     stdin_open: true
     tty: true
     ports:
       - 8080:8080
     build:
       context: .
-      dockerfile: Dockerfile
+      dockerfile: ./dockerfile-onpremise/Dockerfile
